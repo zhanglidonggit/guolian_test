@@ -129,9 +129,10 @@ CREATE TABLE `gl_integral_config` (
   `update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='积分赠送配置表';
-![image](https://user-images.githubusercontent.com/30429088/232596391-27a6a755-52bc-483f-9ee7-4e7fe18b5be6.png)
+```
+![image](https://user-images.githubusercontent.com/30429088/232619728-874d1884-b320-4e29-9d19-fb1865ab75e3.png)
 
-
+```
 CREATE TABLE `gl_user_change_integrals` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户ID',
   `change_type` tinyint(2) NOT NULL DEFAULT '1' COMMENT '变动类型 1 增加 2减少',
@@ -142,9 +143,10 @@ CREATE TABLE `gl_user_change_integrals` (
   `adddate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '添加时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户积分变动记录表';
-![image](https://user-images.githubusercontent.com/30429088/232596332-b638d6d9-0bd7-4377-8031-8741329a2c7e.png)
+```
+![image](https://user-images.githubusercontent.com/30429088/232619803-54c62b00-4610-4989-af12-678ff9981ec3.png)
 
-
+```
 CREATE TABLE `gl_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '用户ID',
   `username` varchar(20) NOT NULL DEFAULT '' COMMENT '用户名',
@@ -154,9 +156,11 @@ CREATE TABLE `gl_users` (
   `update` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='用户表';
-![image](https://user-images.githubusercontent.com/30429088/232596259-a833ff81-2448-4106-b9d2-9be6d3543d36.png)
 
 ```
+![image](https://user-images.githubusercontent.com/30429088/232619853-22a1c241-b96c-4d9a-a23a-7226e332f4c1.png)
+
+
 
 ### 业务控制器实现
 #### 1用户注册 Code:application/controllers/Welcome.php:register url:/welcome/register
