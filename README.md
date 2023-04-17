@@ -73,8 +73,8 @@
 │   │           ├── sv
 │   │           └── tr
 │   ├── logs
-│   ├── models
-│   ├── third_party         --第三方模块
+│   ├── models              --模型类（数据库）
+│   ├── third_party         --第三方模块
 │   │   ├── Monolog
 │   │   │   ├── Formatter
 │   │   │   ├── Handler
